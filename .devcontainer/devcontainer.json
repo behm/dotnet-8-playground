@@ -1,0 +1,29 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/dotnet
+{
+    "name": ".NET 8 playground",
+    "dockerComposeFile": [
+        "../docker/docker-compose.yaml"
+    ],
+    "service": "dev-env",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-dotnettools.csdevkit",
+                "ms-azuretools.vscode-docker"
+                // ,
+                // "shardulm94.trailing-spaces",
+                // "mikestead.dotenv",
+                // "fernandoescolar.vscode-solution-explorer",
+                // "jmrog.vscode-nuget-package-manager",
+                // "patcx.vscode-nuget-gallery",
+                // "pkief.material-icon-theme",
+                // "formulahendry.dotnet-test-explorer",
+                // "ms-dotnettools.vscode-dotnet-runtime",
+                // "ms-azuretools.vscode-docker"
+            ]
+        }
+    },
+    "remoteUser": "root"
+}
